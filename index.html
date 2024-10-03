@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="goobers homepage v2" />
+		<meta name="author" content="luxploit" />
+
+		<style>
+			* {
+				cursor: url("data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABgAAAAwAAAAMAAAAGAAAARgAAAGwAAAB8AAAAf4AAAH8AAAB+AAAAfAAAAHgAAABwAAAAYAAAAEAAAAAAAAAAAAAAAAAAAA/////////////////////////////////////////////////////////////////+f////D////w////4f///eH///zD///8Q////Af///wAf//8AP///AH///wD///8B////A////wf///8P////H////z////9/////////8="),
+					default;
+				color: #ddd;
+			}
+
+			*:link {
+				cursor: url("data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAABQAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAFAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAATAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABMAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwAAACYAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAJgAAABMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAcAAAANQAAAEwAAABMAAAATAAAAEwAAABMAAAATAAAAEwAAAA1AAAAHAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAUwAAAEEAAAAlAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAD//////////////////////////////////////wAAAP8AAABVAAAASwAAAC8AAAATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAP//////////////////////////////////////AAAA/wAAAFUAAABSAAAAOAAAABwAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAD/////////////////////////////////////////////////AAAA/wAAAFQAAABBAAAAJQAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAP////////////////////////////////////////////////8AAAD/AAAAVQAAAEsAAAAvAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAD//////////////////////////////////////////////////////wAAAP8AAABVAAAAUgAAADYAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAADAAAAP///////////////////////////////////////////////////////////wAAAP8AAABUAAAAOAAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAD/////////////////////////////////////////////////////////////////AAAA/wAAAFUAAAA5AAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAP////////////////////////////////////////////////////////////////8AAAD/AAAAVQAAADkAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////////////////////////////////////////////////////////////////wAAAP8AAABUAAAAOAAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////////////////////////////////////////AAAA/wAAAFEAAAA1AAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////8AAAD///////////////////////////////////////////////////////////8AAAD/AAAASAAAACwAAAATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP///////////////////////////////////////////wAAAP///////////wAAAP8AAAA1AAAAHAAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA////////////AAAA////////////AAAA////////////AAAA////////////AAAA/wAAAB8AAAAMAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////8AAAD///////////8AAAD///////////8AAAD//////wAAAP8AAAAVAAAADAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////////wAAAP///////////wAAAP///////////wAAAP8AAAD/AAAADwAAAAYAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////AAAA////////////AAAA/wAAAP8AAAD/AAAACAAAAAYAAAADAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////8AAAD/AAAA/wAAAP8AAAAhAAAABgAAAAMAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////////wAAAP8AAABRAAAANQAAABoAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////AAAA/wAAAEUAAAAsAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////8AAAD/AAAALwAAABwAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////////wAAAP8AAAAVAAAADAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAABgAAAAYAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////////////////////////////////////gD///4A///+AP///AB///wAf//4AH//+AA///AAP//wAD//4AA//8AAP//AAD//wAA///gAP//4AH//+AD///gD///4H///+H////h////4f///+H////z/////////////8="),
+					auto;
+			}
+
+			body {
+				background-color: rgb(55, 65, 65);
+				max-width: 55em;
+				margin: auto;
+			}
+
+			address {
+				margin-top: 2em;
+				text-align: right;
+				color: hotpink;
+			}
+
+			pre {
+				margin: 0;
+			}
+
+			.outerMarquee {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+				height: 1.25rem;
+			}
+			.marquee {
+				display: inline-block;
+				position: absolute;
+				white-space: nowrap;
+				top: 0;
+			}
+		</style>
+
+		<script>
+			let doScroll = false;
+
+			const doLastFM = () => {
+				fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=lnk_fm&api_key=ab4637f5305150653649d72bf6632432&format=json&limit=1")
+					.then((response) => response.json())
+					.then((data) => {
+						let track = data.recenttracks.track[0];
+						if (track["@attr"] && track["@attr"].nowplaying) {
+							let artistName = track.artist["#text"];
+							let songName = track.name;
+							let url = track.url;
+
+							document.getElementById("balls").textContent = `${songName} by ${artistName}`;
+							let linkElement = document.getElementById("linkedBalls");
+							linkElement.href = url;
+							doScroll = true;
+						} else {
+							document.getElementById("balls").textContent = "...nothing...";
+							let linkElement = document.getElementById("linkedBalls");
+							linkElement.href = "#";
+							//linkElement.textContent = '...nothing...';
+							linkElement.style.left = 0;
+							doScroll = false;
+						}
+					})
+					.catch((error) => console.error("Error:", error));
+			};
+
+			const updateScrollingText = () => {
+				if (!doScroll) return;
+
+				const textElement = document.getElementById("linkedBalls");
+				textElement.style.left = parseInt(textElement.style.left, 10) - 1 + "px";
+				if (textElement.offsetWidth + parseInt(textElement.style.left, 10) + 5 < 0) {
+					textElement.style.left = document.getElementById("balls").parentNode.parentNode.offsetWidth + 5 + "px";
+				}
+			};
+
+			window.onload = () => {
+				const textElement = document.getElementById("linkedBalls");
+				textElement.style.left = 0;
+				setInterval(updateScrollingText, 10);
+				setInterval(doLastFM, 5000);
+
+				doLastFM();
+			};
+		</script>
+
+		<title>lux's website</title>
+	</head>
+
+	<body>
+		<div style="display: flex; flex-direction: row; align-items: end; width: 100%">
+			<h1 style="margin-bottom: 0; flex-shrink: 0; padding-right: 0.5em">luxploit.net</h1>
+			<pre style="font-size: larger; padding-bottom: 0.25em"><b>now playing <small>(live)</small></b>: </pre>
+			<div class="outerMarquee">
+				<pre style="font-size: medium; padding-bottom: 0.325em"><a class="marquee" id="linkedBalls" href=""><i id="balls" >...currenty loading...</i></a></pre>
+			</div>
+		</div>
+		<pre>Last Updated on 04/10/2024</pre>
+
+		<div style="display: flex; flex-direction: row; gap: 4em">
+			<div style="display: flex; flex-direction: column; gap: 0">
+				<h2>about me</h2>
+				<pre>Laura Ava, she/her and Trans 🏳️‍⚧️</pre>
+				<pre>Procrastinating Backend Engineer</pre>
+				<pre>Self-taught, ~7yrs of experience</pre>
+				<pre>used to show balls for money :3</pre>
+			</div>
+			<div style="display: flex; flex-direction: column; gap: 0">
+				<h2>find me</h2>
+				<pre>Mastodon - <a href="https://tty0.social/@laura">@laura@tty0.social</a></pre>
+				<pre>SpaceHey - <a href="https://spacehey.com/lnkexploit">@lnkexploit</a></pre>
+				<pre>Bluesky  - <a href="https://bsky.app/luxploit.net">@luxploit.net</a></pre>
+				<pre>Twitter  - <a href="https://x.com/luxploit">@luxploit</a></pre>
+			</div>
+			<div style="display: flex; flex-direction: column; text-align: center; align-items: center; margin-left: auto">
+				<img style="box-shadow: 0 0 10px #9ecaed" src="https://luxploit.net/assets/balls.jpg" width="128" height="128" />
+				<i>just goofin <small>(now with hrt)</small></i>
+			</div>
+		</div>
+
+		<div style="display: flex; flex-direction: row; gap: 0.5em; justify-content: center; margin-top: 1em">
+			<i>GitHub: <a href="https://github.com/luxploit">github.com/luxploit</a></i>
+			|
+			<i>GitLab: <a href="https://gitlab.com/luxploit">gitlab.com/ethernalraine</a></i>
+			|
+			<i>Old VCS: <a href="https://code.luxploit.net">code.luxploit.net</a></i>
+		</div>
+
+		<div style="display: flex; flex-direction: row; gap: 1em; margin-bottom: -15px">
+			<div>
+				<h2>long-term coding projects</h2>
+				<ul>
+					<li>
+						Project Iris
+						<i>
+							<small>(<span style="color: greenyellow">Active</span> - Closed Source - Lead Dev)</small>
+						</i>
+						<ul>
+							<li>MySpaceIM backend replacement project</li>
+							<li>Full-stack retro social media network</li>
+						</ul>
+					</li>
+					<li>
+						Helios
+						<i>
+							<small>(<span style="color: greenyellow">Active</span> - Closed Source - Frontend Dev)</small>
+						</i>
+						<ul>
+							<li>Private uploader, written in Golang and TS</li>
+							<li>Unlimited storage and unrivaled privacy</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2>contributing projects</h2>
+				<ul>
+					<li>
+						<a href="https://remsgr.net/">Remessenger</a>
+						<i>
+							<small>(<span style="color: greenyellow">Active</span> - Closed Source - DevOps Engineer)</small>
+						</i>
+						<ul>
+							<li>Modern MSN Messenger revival service</li>
+							<li>Built with TypeScript; Supports MSNP2 - MSNP18</li>
+						</ul>
+					</li>
+					<li>
+						<a href="https://github.com/ChrizziDerKek/BugshotRoulette">BugshotRoulette</a>
+						<i>
+							<small>(<span style="color: greenyellow">Active</span> - Apache-2.0 - Backend Dev)</small>
+						</i>
+						<ul>
+							<li>Multiplayer-only Buckshot Roulette Fangame</li>
+							<li>Selfhostable with up to 5 players; Powered with .NET</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<h2>cool stuff i made</h2>
+		<div style="display: flex; flex-direction: column; gap: 1em">
+			<div style="display: flex; flex-direction: row; gap: 2em; padding-left: 40px">
+				<ul style="margin: 0; padding: 0">
+					<li>
+						ng1-deco <i><small>(Closed Source)</small></i>
+						<ul>
+							<li>Angular2+ style decorators for AngularJS 1.8+</li>
+						</ul>
+					</li>
+				</ul>
+				<ul style="margin: 0; padding: 0">
+					<li>
+						Lunis <i><small>(Closed Source)</small></i>
+						<ul>
+							<li>Microservice framework and Admin for Go and C#</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div style="display: flex; flex-direction: row; gap: 2.75em; padding-left: 40px">
+				<ul style="margin: 0; padding: 0">
+					<li>
+						<a href="https://www.npm.im/@lxpt/azureflare">AzureFlare</a>
+						<i>
+							<small><a href="https://github.com/luxploit/AzureFlare">(BSD 4-Clause)</a></small>
+						</i>
+						<ul>
+							<li>TypeScript decorator abstractions for express</li>
+						</ul>
+					</li>
+				</ul>
+				<ul style="margin: 0; padding: 0">
+					<li>
+						cloudx86 <i><small>(Closed Source)</small></i>
+						<ul>
+							<li>Versatile cheat engine targeting the Source Engine</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div style="display: flex; flex-direction: row; gap: 3em">
+			<div style="display: flex; flex-direction: column; gap: 0">
+				<h2>misc links</h2>
+				<pre>Wishlist   - <a href="https://throne.com/recon3">Throne</a></pre>
+				<pre>YT Channel - <a href="https://www.youtube.com/channel/UCy6oe068NP4Os8cM3DJnd5Q">@datalynk</a></pre>
+			</div>
+			<div style="display: flex; flex-direction: column; gap: 0">
+				<h2>hosted stuff</h2>
+				<pre>Jellyfin  - <a href="https://video.luxploit.net">video.luxploit.net</a></pre>
+				<pre>Navidrome - <a href="https://audio.luxploit.net">audio.luxploit.net</a></pre>
+			</div>
+			<div style="display: flex; flex-direction: column; gap: 0">
+				<h2>friends</h2>
+				<div style="display: flex; flex-direction: row; gap: 0.5em">
+					<pre><a href="https://lovesick.wtf/angel">yumiko</a></pre>
+					<pre><a href="https://tim.ong/">eintim</a></pre>
+					<pre><a href="https://nullderef.org/">nullderef</a></pre>
+					<pre><a href="https://github.com/chrizziderkek">x-man</a></pre>
+					<pre><a href="https://knijn.one/">emmaknijn</a></pre>
+					<pre><a href="https://www.youtube.com/@hs-tc">w1aw</a></pre>
+				</div>
+				<div style="display: flex; flex-direction: row; gap: 0.5em">
+					<pre><a href="https://riddim-glitch.is-a.dev/">riddim_glitch</a></pre>
+					<!-- <pre><a href="https://warutv.neocities.org/">waruzii</a></pre> -->
+					<pre><a href="https://lifix.site/">lifix</a></pre>
+					<pre><a href="https://www.diskfloppy.me/">floppydisk</a></pre>
+					<pre><a href="https://twitter.com/DISKICON">diskicon</a></pre>
+					<pre><a href="https://twitter.com/HerMagistyLina">lina</a></pre>
+				</div>
+			</div>
+		</div>
+
+		<div style="display: flex; flex-direction: row; padding-top: 2rem">
+			<img src="https://luxploit.net/assets/firefox4.gif" width="88" height="31" style="margin-top: 1.25rem" />
+			<img src="https://88x31.kate.pet/not_intended_for_children_03.jpg" width="88" height="31" style="margin-top: 1.25rem" />
+			<img src="https://88x31.kate.pet/hrt-e2.gif" width="88" height="31" style="margin-top: 1.25rem" />
+			<img src="https://luxploit.net/assets/javascript.gif" width="88" height="31" style="margin-top: 1.25rem" />
+
+			<div style="flex-grow: 1"></div>
+
+			<address>luxploit.net - (c) 2024 | admin@luxploit.net</address>
+		</div>
+	</body>
+</html>
