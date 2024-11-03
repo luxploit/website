@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="lux's goofy Services" />
+		<meta name="author" content="luxploit" />
+
+		<style>
+			* {
+				cursor: url("data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABgAAAAwAAAAMAAAAGAAAARgAAAGwAAAB8AAAAf4AAAH8AAAB+AAAAfAAAAHgAAABwAAAAYAAAAEAAAAAAAAAAAAAAAAAAAA/////////////////////////////////////////////////////////////////+f////D////w////4f///eH///zD///8Q////Af///wAf//8AP///AH///wD///8B////A////wf///8P////H////z////9/////////8="),
+					default;
+				color: #ddd;
+			}
+
+			*:link {
+				cursor: url("data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAABQAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAFAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAATAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABMAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwAAACYAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAJgAAABMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAcAAAANQAAAEwAAABMAAAATAAAAEwAAABMAAAATAAAAEwAAAA1AAAAHAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAUwAAAEEAAAAlAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAD//////////////////////////////////////wAAAP8AAABVAAAASwAAAC8AAAATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAP//////////////////////////////////////AAAA/wAAAFUAAABSAAAAOAAAABwAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAD/////////////////////////////////////////////////AAAA/wAAAFQAAABBAAAAJQAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAP////////////////////////////////////////////////8AAAD/AAAAVQAAAEsAAAAvAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAD//////////////////////////////////////////////////////wAAAP8AAABVAAAAUgAAADYAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAADAAAAP///////////////////////////////////////////////////////////wAAAP8AAABUAAAAOAAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAD/////////////////////////////////////////////////////////////////AAAA/wAAAFUAAAA5AAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAP////////////////////////////////////////////////////////////////8AAAD/AAAAVQAAADkAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////////////////////////////////////////////////////////////////wAAAP8AAABUAAAAOAAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////////////////////////////////////////AAAA/wAAAFEAAAA1AAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////8AAAD///////////////////////////////////////////////////////////8AAAD/AAAASAAAACwAAAATAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP///////////////////////////////////////////wAAAP///////////wAAAP8AAAA1AAAAHAAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA////////////AAAA////////////AAAA////////////AAAA////////////AAAA/wAAAB8AAAAMAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////8AAAD///////////8AAAD///////////8AAAD//////wAAAP8AAAAVAAAADAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////////wAAAP///////////wAAAP///////////wAAAP8AAAD/AAAADwAAAAYAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////AAAA////////////AAAA/wAAAP8AAAD/AAAACAAAAAYAAAADAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////8AAAD/AAAA/wAAAP8AAAAhAAAABgAAAAMAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////////wAAAP8AAABRAAAANQAAABoAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////AAAA/wAAAEUAAAAsAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////8AAAD/AAAALwAAABwAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////////wAAAP8AAAAVAAAADAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAABgAAAAYAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////////////////////////////////////gD///4A///+AP///AB///wAf//4AH//+AA///AAP//wAD//4AA//8AAP//AAD//wAA///gAP//4AH//+AD///gD///4H///+H////h////4f///+H////z/////////////8="),
+					auto;
+			}
+
+			body {
+				background-color: rgb(55, 65, 65);
+				max-width: 55em;
+				margin: auto;
+			}
+
+			address {
+				margin-top: 2em;
+				text-align: right;
+				color: hotpink;
+			}
+
+			pre {
+				margin: 0;
+			}
+		</style>
+
+		<title>lux's website</title>
+	</head>
+
+	<body>
+		<div style="display: flex; flex-direction: row; align-items: end; width: 100%">
+			<h1 style="margin-bottom: 0; flex-shrink: 0; padding-right: 0.5em">luxploit.net &mdash; game servers</h1>
+		</div>
+		<pre>Last Updated on 27/10/2024</pre>
+
+		<div style="display: flex; flex-direction: row; gap: 2.75em">
+			<div style="display: flex; flex-direction: column; gap: 0">
+				<h2>host server stats</h2>
+				<pre>Server: HP Microserver Gen7</pre>
+				<pre>CPU: AMD Turion II Neo N40L @ 1.5ghz</pre>
+				<pre>RAM: 8gb Kingston DDR3 @ 1066mhz</pre>
+				<pre>Storage: 24TB RAID0 Array (4x6TB)</pre>
+			</div>
+			<div style="display: flex; flex-direction: column; gap: 0">
+				<h2>host connection stats</h2>
+				<pre>ISP: Vodafone Business</pre>
+				<pre>Router: FritzBox Cable 6690</pre>
+				<pre>Download Speed: 1.1gbps</pre>
+				<pre>Upload Speed: 52.5mbps</pre>
+			</div>
+			<div style="display: flex; flex-direction: column; text-align: center; align-items: center; margin-left: auto">
+				<img style="box-shadow: 0 0 10px #9ecaed" src="https://luxploit.net/assets/server.jpg" width="128" height="128" />
+				<i>the beast <small>(woah)</small></i>
+			</div>
+		</div>
+
+		<div style="display: flex; flex-direction: column; gap: 1em; margin-bottom: -15px; margin-top: 15px; align-items: center; margin-left: -20px">
+			<h2 style="margin-bottom: -15px">Game Servers</h2>
+			<div style="display: flex; flex-direction: row; margin-bottom: -15px; margin-top: 15px; gap: 1em">
+				<ul style="display: flex; flex-direction: column; flex-shrink: 0; gap: 1.5em; justify-content: center">
+					<li>
+						<span>Unreal Tournament 1999</span>
+						<i>
+							<small>(<span style="color: greenyellow">Online</span> - Patch 496d)</small>
+						</i>
+						<ul>
+							<li><pre style="margin-top: 3px; margin-bottom: 3px">gms.luxploit.net &mdash; Port 7777</pre></li>
+						</ul>
+					</li>
+					<li>
+						<span>Unreal Tournament 2004</span>
+						<i>
+							<small>(<span style="color: greenyellow">Online</span> - Patch 3369)</small>
+						</i>
+						<ul>
+							<li><pre style="margin-top: 3px; margin-bottom: 3px">gms.luxploit.net &mdash; Port 8772</pre></li>
+						</ul>
+					</li>
+				</ul>
+				<ul style="display: flex; flex-direction: column; flex-shrink: 0; gap: 1.5em; justify-content: center">
+					<li>
+						<span>Quake III Arena</span>
+						<i>
+							<small>(<span style="color: greenyellow">Online</span> - Patch 1.32c)</small>
+						</i>
+						<ul>
+							<li><pre style="margin-top: 3px; margin-bottom: 3px">gms.luxploit.net &mdash; Port 27960</pre></li>
+						</ul>
+					</li>
+					<li>
+						<span>Quake 4</span>
+						<i>
+							<small>(<span style="color: greenyellow">Online</span> - Patch 1.4.2)</small>
+						</i>
+						<ul>
+							<li><pre style="margin-top: 3px; margin-bottom: 3px">gms.luxploit.net &mdash; Port 27650</pre></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div style="display: flex; flex-direction: row; padding-top: 2rem">
+			<img src="https://luxploit.net/assets/firefox4.gif" width="88" height="31" style="margin-top: 1.25rem" />
+			<img src="https://88x31.kate.pet/not_intended_for_children_03.jpg" width="88" height="31" style="margin-top: 1.25rem" />
+			<img src="https://88x31.kate.pet/hrt-e2.gif" width="88" height="31" style="margin-top: 1.25rem" />
+			<img src="https://luxploit.net/assets/javascript.gif" width="88" height="31" style="margin-top: 1.25rem" />
+
+			<div style="flex-grow: 1"></div>
+
+			<address>luxploit.net - (c) 2022 - 2024 | admin@luxploit.net</address>
+		</div>
+
+		<div style="display: flex; flex-direction: row; gap: 0.5em; margin-top: 0.5em">
+			<i><small>y'all suck at unreal tournament fr</small></i>
+			<div style="flex-grow: 1"></div>
+			<small>
+				<i><a href="/index.html">Return to Homepage</a></i>
+			</small>
+		</div>
+	</body>
+</html>
