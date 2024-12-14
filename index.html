@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="goobers homepage v2" />
+		<meta name="description" content="a goobers quirky homepage" />
 		<meta name="author" content="luxploit" />
+		<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 
 		<style>
 			* {
@@ -24,7 +25,7 @@
 
 			body {
 				background-color: rgb(55, 65, 65);
-				max-width: 55em;
+				max-width: 53.5em;
 				margin: auto;
 			}
 
@@ -46,6 +47,7 @@
 				width: 100%;
 				height: 1.25rem;
 			}
+
 			.marquee {
 				display: inline-block;
 				position: absolute;
@@ -111,7 +113,7 @@
 			<h1 style="margin-bottom: 0; flex-shrink: 0; padding-right: 0.5em">luxploit.net</h1>
 			<pre style="font-size: larger; padding-bottom: 0.25em"><b>now playing <small>(live)</small></b>: </pre>
 			<div class="outerMarquee">
-				<pre style="font-size: medium; padding-bottom: 0.325em"><a class="marquee" id="linkedBalls" href=""><i id="balls" >...currenty loading...</i></a></pre>
+				<pre style="font-size: medium; padding-bottom: 0.325em"><a class="marquee" id="linkedBalls" href=""><i id="balls" class="eighthover" >...currenty loading...</i></a></pre>
 			</div>
 		</div>
 		<pre>Last Updated on 03/11/2024</pre>
@@ -119,10 +121,10 @@
 		<div style="display: flex; flex-direction: row; gap: 2.75em">
 			<div style="display: flex; flex-direction: column; gap: 0">
 				<h2>about me</h2>
-				<pre>Laura Ava, she/her and Trans 🏳️‍⚧️</pre>
-				<pre>Procrastinating Backend Engineer</pre>
-				<pre>Self-taught, ~7yrs of experience</pre>
-				<pre>Theistic satanist but still boring</pre>
+				<pre>Laura Sienna, she/her and Transfemme 🏳️‍⚧️</pre>
+				<pre>Procrastinating (mostly) backend engineer</pre>
+				<pre>Self-taught, ca. 7yrs of Dev experience</pre>
+				<pre>Sometimes also an adult content creator</pre>
 			</div>
 			<div style="display: flex; flex-direction: column; gap: 0">
 				<h2>find me</h2>
@@ -145,7 +147,7 @@
 			<i>Old VCS: <a href="https://code.luxploit.net">code.luxploit.net</a></i>
 		</div>
 
-		<div style="display: flex; flex-direction: column; padding-left: 25px; padding-right: 25px">
+		<div style="display: flex; flex-direction: column">
 			<div style="display: flex; flex-direction: row; gap: 1.75em; margin-bottom: -15px">
 				<div>
 					<h2 style="padding-left: 10px">long-term coding projects</h2>
@@ -238,9 +240,8 @@
 					</ul>
 				</div>
 			</div>
-		</div>
 
-		<div style="display: flex; flex-direction: row; gap: 4rem; margin-top: 0.25em; justify-content: center; align-items: center">
+			<!-- <div style="display: flex; flex-direction: row; gap: 4rem; margin-top: 0.25em; justify-content: center; align-items: center">
 			<div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1.25em; margin-bottom: 1.25em; justify-content: center; align-items: center">
 				<h1>associated sites</h1>
 				<div style="display: flex; flex-direction: row; gap: 0.5rem; justify-content: center; align-items: center; margin-top: -10px">
@@ -258,27 +259,19 @@
 						</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
-			<div style="display: flex; flex-direction: column; gap: 0.25em; justify-content: center; align-items: center">
-				<div style="display: flex; flex-direction: row; gap: 2em; justify-content: center; align-items: center">
-					<div style="display: flex; flex-direction: column; gap: 0; justify-content: center; align-items: center">
-						<h2>miscellaneous links</h2>
-						<div style="display: flex; flex-direction: row; gap: 0.5em; justify-content: center; align-items: center">
-							<pre><a href="https://youtube.com/@datalynk">YT Channel</a></pre>
-							<pre><a href="https://svc.luxploit.net">Hosted Services</a></pre>
-						</div>
+			<div style="display: flex; flex-direction: row; gap: 2em; flex-shrink: 0; padding-left: 10px">
+				<div style="display: flex; flex-direction: column; gap: 0; flex-shrink: 0">
+					<h2>miscellaneous links</h2>
+					<div style="display: flex; flex-direction: column; gap: 0em">
+						<pre><a href="https://youtube.com/@datalynk">YouTube Channel</a></pre>
+						<pre><a href="https://svc.luxploit.net">Hosted Services</a></pre>
 					</div>
-					<!-- <div style="display: flex; flex-direction: column; gap: 0; justify-content: center; align-items: center">
-						<h2>hosting</h2>
-						<div style="display: flex; flex-direction: row; gap: 0.5em; justify-content: center; align-items: center">
-							<pre><a href="https://video.luxploit.net">Jellyfin</a></pre>
-							<pre><a href="https://audio.luxploit.net">Navidrome</a></pre>
-						</div>
-					</div> -->
 				</div>
-				<div style="display: flex; flex-direction: column; gap: 0; justify-content: center; align-items: center">
-					<h2>friends</h2>
+
+				<div style="display: flex; flex-direction: column; gap: 0">
+					<h2>friends list</h2>
 					<div style="display: flex; flex-direction: row; gap: 0.5em">
 						<pre><a href="https://lovesick.wtf/angel">yumiko</a></pre>
 						<pre><a href="https://tim.ong/">eintim</a></pre>
@@ -296,15 +289,34 @@
 						<pre><a href="https://twitter.com/HerMagistyLina">lina</a></pre>
 					</div>
 				</div>
+
+				<div style="display: flex; flex-direction: column; gap: 0; justify-content: center; align-items: center">
+					<a href="https://linktr.ee/cinnamon.sienna" style="padding-top: 30px; display: flex; justify-content: center; align-items: center">
+						<img class="eighthover" src="assets/sign.png" width="50%" />
+					</a>
+					<small style="margin-top: 5px"><i>click the sign to discover my nsfw content</i></small>
+				</div>
 			</div>
+
+			<!--<div style="display: flex; flex-direction: column; gap: 0.25em; justify-content: center; align-items: center">
+				<div style="display: flex; flex-direction: row; gap: 2em; justify-content: center; align-items: center">
+					 <div style="display: flex; flex-direction: column; gap: 0; justify-content: center; align-items: center">
+						<h2>hosting</h2>
+						<div style="display: flex; flex-direction: row; gap: 0.5em; justify-content: center; align-items: center">
+							<pre><a href="https://video.luxploit.net">Jellyfin</a></pre>
+							<pre><a href="https://audio.luxploit.net">Navidrome</a></pre>
+						</div>
+					</div> 
+				</div>
+			 </div> -->
 		</div>
 
 		<div style="display: flex; flex-direction: row; padding-top: 2rem; align-items: center">
 			<a href="https://www.mozilla.org/en-US/firefox/">
 				<img class="eighthover" src="https://luxploit.net/assets/firefox4.gif" width="88" height="31" />
 			</a>
-			<a href="https://ubuntu.com/download/server">
-				<img class="eighthover" src="https://88x31.kate.pet/poweredby_ubuntu_button_88x31.png" width="88" height="31" />
+			<a href="http://www.mabsland.com/Adoption.html">
+				<img class="eighthover" src="http://www.mabsland.com/Pandas/Censor_NC17c.gif" width="88" height="31" />
 			</a>
 			<a href="https://diyhrt.wiki/">
 				<img class="eighthover" src="https://88x31.kate.pet/hrt-e2.gif" width="88" height="31" />
@@ -316,7 +328,7 @@
 			<div style="flex-grow: 1"></div>
 
 			<div style="display: flex; flex-direction: column">
-				<address>luxploit.net - (c) 2022 - 2024 | admin@luxploit.net</address>
+				<address>Copyright 2022 &dash; 2025 &mdash; luxploit.net</address>
 
 				<div style="display: flex; flex-direction: row; gap: 0.5em; margin-top: 0.25em">
 					<div style="flex-grow: 1"></div>
@@ -333,6 +345,16 @@
 					</small>
 				</div>
 			</div>
+		</div>
+
+		<div style="display: flex; flex-direction: column; padding-top: 2rem; align-items: center; justify-content: center">
+			<i>
+				<small style="color: #bbb">this site is rated for mature audiences only and thus the visitor is liable for any interactions if under the age of 18</small>
+			</i>
+
+			<i>
+				<small style="color: #bbb">for any question and/or inqueries, please reach out to the postmaster at admin@luxploit.net</small>
+			</i>
 		</div>
 	</body>
 </html>
