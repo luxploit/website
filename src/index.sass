@@ -1,0 +1,23 @@
+*
+    cursor: url("/images/cursor.ico"), auto
+
+:link
+    cursor: url("/images/hover.ico"), auto
+
+body
+    padding: 0
+    margin: 0
+    font-family: 'Times New Roman', Times, serif
+
+#container
+    @apply flex flex-col justify-center items-center gap-5 py-6 max-w-[950px] w-full h-full
+
+main
+    @apply bordered-box w-full
+
+a
+    @apply text-retro-darker underline
+
+.bordered-box
+    @apply bg-retro-backdrop/95 border-[3px] border-solid border-retro-border p-4
+    @apply drop-shadow-[9px_7px_rgba(134,167,136,0.6)]

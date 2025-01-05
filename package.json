@@ -1,0 +1,37 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"postbuild": "react-snap"
+	},
+	"dependencies": {
+		"preact": "^10.25.3",
+		"preact-iso": "^2.8.1",
+		"preact-render-to-string": "^6.5.12",
+		"react-helmet-async": "^2.0.5"
+	},
+	"devDependencies": {
+		"@preact/preset-vite": "^2.9.3",
+		"autoprefixer": "^10.4.20",
+		"postcss": "^8.4.49",
+		"prettier": "^3.4.2",
+		"react-snap": "^1.23.0",
+		"sass": "^1.83.1",
+		"sass-loader": "^16.0.4",
+		"tailwindcss": "^3.4.17",
+		"typescript": "^5.7.2",
+		"vite": "^6.0.7"
+	},
+	"reactSnap": {
+		"source": "dist",
+		"minifyHtml": {
+			"collapseWhitespace": false,
+			"removeComments": false,
+			"skipThirdPartyRequests": true,
+			"preconnectThirdParty": false
+		}
+	}
+}

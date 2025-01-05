@@ -1,0 +1,22 @@
+@use '../../index'
+
+#nav
+    @apply w-full h-[100px] flex flex-row items-center bordered-box
+
+    nav
+        @apply w-1/2 flex-shrink-0 flex flex-col
+
+        h1
+            @apply italic text-3xl font-bold
+
+        section
+            @apply flex flex-row items-center gap-2
+
+            ul
+                @apply list-none p-0
+
+            li
+                @apply inline px-2 border-l-2 border-retro-border border-solid first:border-none first:-ml-2
+
+    #activity
+        @apply w-1/2 text-right
