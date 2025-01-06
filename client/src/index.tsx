@@ -11,6 +11,7 @@ import { _404 } from './pages/_404/_404';
 
 import 'tailwindcss/tailwind.css';
 import './index.sass';
+import axios from 'axios';
 
 export const App = () => {
 	return (
@@ -32,6 +33,10 @@ export const App = () => {
 		</HelmetProvider>
 	);
 };
+
+export const axiosInst = axios.create({
+	baseURL: import.meta.env.DEV ? 'http://localhost:9999' : `${window.location.protocol}//api.luxploit.net`,
+});
 
 const rootEl = document.getElementById('root');
 if (rootEl.hasChildNodes()) {

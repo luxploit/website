@@ -7,6 +7,13 @@ export const Home = () => {
 		<>
 			<Helmet>
 				<title>Home - lux's website</title>
+				<meta name="description" content="Welcome to the home of just another goofy goober <3" />
+
+				<meta name="twitter:title" content="Home - lux's website" />
+				<meta name="twitter:description" content="Welcome to the home of just another goofy goober <3" />
+
+				<meta property="og:title" content="Home - lux's website" />
+				<meta property="og:description" content="Welcome to the home of just another goofy goober <3" />
 			</Helmet>
 
 			<div id="home">

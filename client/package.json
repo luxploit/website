@@ -9,6 +9,7 @@
 		"postbuild": "react-snap"
 	},
 	"dependencies": {
+		"axios": "^1.7.9",
 		"preact": "^10.25.3",
 		"preact-iso": "^2.8.1",
 		"preact-render-to-string": "^6.5.12",

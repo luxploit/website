@@ -1,3 +1,4 @@
+import { LastFM } from '../lastfm/lastfm';
 import './header.sass';
 
 export const Header = () => {
@@ -18,11 +19,7 @@ export const Header = () => {
 					</ul>
 				</section>
 			</nav>
-			<div id="activity">
-				{/** todo add api for lastfm */}
-				<h2>{true ? 'now' : 'last'} playing (last.fm)</h2>
-				<a href={'https://www.last.fm/music/Yung+Lain/_/Ciel'}>Ciel by Yung Lain</a>
-			</div>
+			<LastFM />
 		</div>
 	);
 };
