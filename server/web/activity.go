@@ -29,11 +29,11 @@ func getLastFmStatus(c *gin.Context) {
 
 	data := resp.Tracks[0]
 
-	if err != nil {
-		c.AbortWithStatus(500)
-		util.LogError("WebAPI LastFM", "Unable to get now playing status! %s", err.Error())
-		return
-	}
+	// if err != nil {
+	// 	c.AbortWithStatus(500)
+	// 	util.LogError("WebAPI LastFM", "Unable to get now playing status! %s", err.Error())
+	// 	return
+	// }
 
 	c.JSON(http.StatusOK, gin.H{
 		"name":       data.Name,
