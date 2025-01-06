@@ -7,6 +7,7 @@ export const Home = () => {
 		<>
 			<Helmet>
 				<title>Home - lux's website</title>
+				<meta name="title" content="Home - lux's website" />
 				<meta name="description" content="Welcome to the home of just another goofy goober <3" />
 
 				<meta name="twitter:title" content="Home - lux's website" />

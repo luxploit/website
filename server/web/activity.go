@@ -2,10 +2,10 @@ package web
 
 import (
 	"net/http"
-	"strconv"
 
 	"github.com/gin-gonic/gin"
 	"github.com/shkh/lastfm-go/lastfm"
+	"luxploit.net/server/util"
 )
 
 var lastFm *lastfm.Api
@@ -23,14 +23,15 @@ func getLastFmStatus(c *gin.Context) {
 
 	if err != nil {
 		c.AbortWithStatus(400)
+		util.LogError("WebAPI LastFM", "Unable to get recent lastfm track! %s", err.Error())
 		return
 	}
 
 	data := resp.Tracks[0]
-	np, err := strconv.ParseBool(data.NowPlaying)
 
 	if err != nil {
 		c.AbortWithStatus(500)
+		util.LogError("WebAPI LastFM", "Unable to get now playing status! %s", err.Error())
 		return
 	}
 
@@ -38,6 +39,6 @@ func getLastFmStatus(c *gin.Context) {
 		"name":       data.Name,
 		"artist":     data.Artist.Name,
 		"url":        data.Url,
-		"nowPlaying": np,
+		"nowPlaying": data.NowPlaying == "true",
 	})
 }

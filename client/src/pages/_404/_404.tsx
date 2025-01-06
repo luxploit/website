@@ -6,6 +6,7 @@ export const _404 = () => {
 		<>
 			<Helmet>
 				<title>Not found - lux's website</title>
+				<meta name="title" content="Not found - lux's website" />
 				<meta name="description" content="The content you're trying to crawl was not found! Whoops..." />
 
 				<meta name="twitter:title" content="Not found - lux's website" />
