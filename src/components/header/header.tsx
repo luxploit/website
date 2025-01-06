@@ -19,7 +19,8 @@ export const Header = () => {
 				</section>
 			</nav>
 			<div id="activity">
-				<h2>now playing (last.fm)</h2>
+				{/** todo add api for lastfm */}
+				<h2>{true ? 'now' : 'last'} playing (last.fm)</h2>
 				<a href={'https://www.last.fm/music/Yung+Lain/_/Ciel'}>Ciel by Yung Lain</a>
 			</div>
 		</div>
