@@ -1,35 +1,34 @@
+import axios from 'axios';
 import { LocationProvider, Router, Route } from 'preact-iso';
 import { HelmetProvider } from 'react-helmet-async';
 import { render } from 'preact';
 
 import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
-import { Background } from './components/background/background';
 
 import { Home } from './pages/home/home';
 import { _404 } from './pages/_404/_404';
 
 import 'tailwindcss/tailwind.css';
 import './index.sass';
-import axios from 'axios';
+import { Files } from './pages/files/files';
 
 export const App = () => {
 	return (
 		<HelmetProvider>
-			<Background>
-				<LocationProvider>
-					<div id="container">
-						<Header />
-						<main>
-							<Router>
-								<Route path="/" component={Home} />
-								<Route default component={_404} />
-							</Router>
-						</main>
-						<Footer />
-					</div>
-				</LocationProvider>
-			</Background>
+			<LocationProvider>
+				<div id="container">
+					<Header />
+					<main>
+						<Router>
+							<Route path="/" component={Home} />
+							<Route path="/files" component={Files} />
+							<Route default component={_404} />
+						</Router>
+					</main>
+					<Footer />
+				</div>
+			</LocationProvider>
 		</HelmetProvider>
 	);
 };

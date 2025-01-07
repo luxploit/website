@@ -3,8 +3,32 @@
 #home
     @apply flex flex-row w-full
 
-    section
-        @apply w-full
+    #text
+        @apply w-full flex flex-col
+
+        h2
+            @apply text-xl font-extrabold mt-3
+
+        section
+            @apply pl-4
+
+        #welcome
+            @apply italic
+
+        #mdni
+            @apply font-extrabold text-red-600 italic
+
+        #hrt
+            @apply text-[12px] italic text-retro-darker
+
+        #news
+            @apply mt-auto
+
+            h4
+                @apply -mb-1 font-bold
+
+            marquee
+                @apply mr-4
 
     #girl
         @apply bordered-box min-w-max self-end flex flex-col justify-center items-center gap-2

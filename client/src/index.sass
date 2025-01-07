@@ -5,18 +5,29 @@
     cursor: url("/images/hover.ico"), auto
 
 body
-    padding: 0
-    margin: 0
     font-family: 'Times New Roman', Times, serif
-
-#container
-    @apply flex flex-col justify-center items-center gap-5 py-6 max-w-[950px] w-full h-full
+    @apply p-0 m-0
 
 main
     @apply bordered-box w-full
 
 a
     @apply text-retro-darker underline
+
+#root
+    background-image: url("/images/wallpaper.jpg")
+    background-size: cover
+    background-attachment: fixed
+    background-position: center
+    @apply fixed -z-10 h-full w-full flex justify-center items-center overflow-auto
+
+#container
+    @apply flex flex-col justify-center items-center gap-5 py-6 max-w-[950px] w-full h-full
+
+[data-tooltip]:hover:after
+    content: attr(data-tooltip)
+    @apply block absolute border-2 border-retro-border border-solid bg-retro-backdrop/85 p-2
+    @apply drop-shadow-[5px_3px_rgba(134,167,136,0.6)]
 
 .bordered-box
     @apply bg-retro-backdrop/95 border-[3px] border-solid border-retro-border p-4

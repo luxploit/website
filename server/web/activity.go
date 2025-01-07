@@ -16,7 +16,7 @@ func activityRouter(router *gin.RouterGroup) {
 }
 
 func getLastFmStatus(c *gin.Context) {
-	resp, err := lastFm.User.GetRecentTracks(lastfm.P{
+	rtResp, err := lastFm.User.GetRecentTracks(lastfm.P{
 		"user":  "lnk_fm",
 		"limit": "1",
 	})
@@ -27,18 +27,23 @@ func getLastFmStatus(c *gin.Context) {
 		return
 	}
 
-	data := resp.Tracks[0]
+	rtData := rtResp.Tracks[0]
 
-	// if err != nil {
-	// 	c.AbortWithStatus(500)
-	// 	util.LogError("WebAPI LastFM", "Unable to get now playing status! %s", err.Error())
-	// 	return
-	// }
+	atData, err := lastFm.Artist.GetInfo(lastfm.P{
+		"artist": rtData.Artist.Name,
+	})
+
+	if err != nil {
+		c.AbortWithStatus(400)
+		util.LogError("WebAPI LastFM", "Unable to get recent lastfm artist! %s", err.Error())
+		return
+	}
 
 	c.JSON(http.StatusOK, gin.H{
-		"name":       data.Name,
-		"artist":     data.Artist.Name,
-		"url":        data.Url,
-		"nowPlaying": data.NowPlaying == "true",
+		"name":       rtData.Name,
+		"artist":     rtData.Artist.Name,
+		"url":        rtData.Url,
+		"artistUrl":  atData.Url,
+		"nowPlaying": rtData.NowPlaying == "true",
 	})
 }

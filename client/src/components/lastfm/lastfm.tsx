@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'preact/hooks';
-import './lastfm.sass';
-import axios from 'axios';
 import { axiosInst } from '../..';
-import { LastFMActivity } from './activity';
+import { LastFMActivity, LastFMRequestState } from './activity';
+
+import './lastfm.sass';
 
 export const LastFM = () => {
 	const [data, setData] = useState<LastFMActivity>();
-	const [loading, setLoading] = useState(true);
-	const [error, setError] = useState(null);
+	const [reqState, setReqState] = useState(LastFMRequestState.Loading);
 
 	useEffect(() => {
 		const fetchStatus = async () => {
@@ -15,41 +14,49 @@ export const LastFM = () => {
 				const response = await axiosInst.get('/activity/lastfm');
 				setData(response.data);
 			} catch (err) {
-				setError(err.message);
+				setReqState(LastFMRequestState.Error);
 			} finally {
-				setLoading(false);
+				setReqState(LastFMRequestState.Updated);
 			}
 		};
 
 		fetchStatus(); // call first time
 		setInterval(() => fetchStatus(), 5000);
-	}, [setData, setError, setLoading]);
+	}, [setData, setReqState]);
 
 	let state = <></>;
 
-	if (loading) {
-		state = (
-			<>
-				<h2>currently loading</h2>
-				<h2>last.fm activity</h2>
-			</>
-		);
-	} else if (error) {
-		state = (
-			<>
-				<h2>unable to retrieve</h2>
-				<h2>last.fm activity</h2>
-			</>
-		);
-	} else {
-		state = (
-			<>
-				<h2>{data.nowPlaying ? 'now' : 'last'} playing (last.fm)</h2>
-				<a href={data.url}>
-					{data.name} by {data.artist}
-				</a>
-			</>
-		);
+	switch (reqState) {
+		case LastFMRequestState.Loading:
+			state = (
+				<>
+					<h2>currently loading</h2>
+					<h2>last.fm activity</h2>
+				</>
+			);
+			break;
+		case LastFMRequestState.Updated:
+			state = (
+				<>
+					<h2>{data.nowPlaying ? 'now' : 'last'} playing (last.fm)</h2>
+					<section id="name">
+						<a id="songname" href={data.url}>
+							{data.name}
+						</a>
+						<span>by</span>
+						<a href={data.artistUrl}>{data.artist}</a>
+					</section>
+				</>
+			);
+			break;
+		case LastFMRequestState.Error:
+		default:
+			state = (
+				<>
+					<h2>unable to retrieve</h2>
+					<h2>last.fm activity</h2>
+				</>
+			);
 	}
 
 	return <div id={'lastfm'}>{state}</div>;
