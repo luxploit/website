@@ -18,6 +18,7 @@ func RunServer() {
 	}))
 
 	activityRouter(r.Group("/activity"))
+	guestbookRouter(r.Group("/guestbook"))
 
 	util.LogInfo("WebAPI", "Listening on port :9999")
 

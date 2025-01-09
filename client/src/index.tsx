@@ -12,6 +12,7 @@ import { _404 } from './pages/_404/_404';
 import 'tailwindcss/tailwind.css';
 import './index.sass';
 import { Files } from './pages/files/files';
+import { NSFW } from './pages/nsfw/nsfw';
 
 export const App = () => {
 	return (
@@ -23,6 +24,7 @@ export const App = () => {
 						<Router>
 							<Route path="/" component={Home} />
 							<Route path="/files" component={Files} />
+							<Route path="/nsfw" component={NSFW} />
 							<Route default component={_404} />
 						</Router>
 					</main>

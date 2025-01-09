@@ -19,8 +19,8 @@ func customGinLogger() gin.HandlerFunc {
 		duration := time.Since(start)
 		statusCode := c.Writer.Status()
 
-		util.LogDebug(util.DEBUG_WEBAPI, "WebAPI", "<Time: %.3fms> <Status: %d> %s %s",
-			float64(duration.Nanoseconds())/1e6, statusCode, c.Request.Method, c.Request.URL.Path,
+		util.LogDebug(util.DEBUG_WEBAPI, "WebAPI", "<IP: %s> <Time: %.3fms> <Status: %d> %s %s",
+			c.RemoteIP(), float64(duration.Nanoseconds())/1e6, statusCode, c.Request.Method, c.Request.URL.Path,
 		)
 	}
 }

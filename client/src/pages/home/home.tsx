@@ -26,10 +26,10 @@ export const Home = () => {
 
 					<h2>Who am I?</h2>
 					<section>
-						<p>I'm Laura, a 19 year old latina trans girl, who gets a bit silly</p>
-						<p>Been living in Germany most of my life although I'm originally from brazil</p>
+						<p>I'm Laura, a 19-year-old latina trans girl, who gets a bit silly</p>
+						<p>Been living in Germany most of my life, although I'm originally from Brazil</p>
 						<p>
-							I go by she/they pronouns and have been on HRT since March 2024 <span id="hrt">({hrtMonthsPast} months now)</span>
+							I go by she/they pronouns, and have been on HRT since March 2024 <span id="hrt">({hrtMonthsPast} months now)</span>
 						</p>
 					</section>
 
@@ -39,7 +39,7 @@ export const Home = () => {
 							I'm a software engineer, working on quirky and interesting <a href={'/projects'}>projects</a>
 						</p>
 						<p>
-							Addtionally I'm an <a href={'/nsfw'}>adult content creator</a>! Please <span id="mdni">minors do not interact!</span>
+							Additionally I'm an <a href={'/nsfw'}>adult content creator</a>! Please <span id="mdni">minors, do not interact!</span>
 						</p>
 						<p>
 							Besides that I also make shitposts from time to time on <a href={'https://www.youtube.com/@datalynk'}>mine</a> and a{' '}
@@ -53,7 +53,7 @@ export const Home = () => {
 							You can find all of my socials linked over <a href={'/socials'}>here</a>, I'm everywhere :3
 						</p>
 						<p>
-							<a href={'mailto:admin@luxploit.net'}>E-Mail</a> me for general or postmaster inqueries, might take a while
+							<a href={'mailto:admin@luxploit.net'}>E-Mail</a> me for general or postmaster inqueries &mdash; it might take a while
 						</p>
 						<p>I guess this site here is also another place you can always find me at</p>
 					</section>

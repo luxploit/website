@@ -14,9 +14,9 @@ export const Footer = () => {
 			<div id="fl-header">
 				<h3>friends list:</h3>
 				<section id="friendslist">
-					<a href={'https://lain.ovh/'} data-tooltip={'i love you so much lainie <3'}>
+					{/* <a href={'https://lain.ovh/'} data-tooltip={"im so sorry for everything, i hope you'll be happy some day"}>
 						lainie
-					</a>
+					</a> */}
 					<a href={'https://tim.ong/'}>eintim</a>
 					<a href={'https://youtube.com/@hs-tc'}>w1aw</a>
 					<a href={'https://zeromods.xyz/'} data-tooltip={'enemy rc-xd spotted'}>
