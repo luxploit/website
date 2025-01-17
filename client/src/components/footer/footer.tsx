@@ -18,7 +18,9 @@ export const Footer = () => {
 						lainie
 					</a> */}
 					<a href={'https://tim.ong/'}>eintim</a>
-					<a href={'https://youtube.com/@hs-tc'}>w1aw</a>
+					<a href={'https://youtube.com/@hs-tc'} data-tooltip={'skibidi rizzler <3'}>
+						w1aw
+					</a>
 					<a href={'https://zeromods.xyz/'} data-tooltip={'enemy rc-xd spotted'}>
 						lifix
 					</a>
