@@ -1,0 +1,48 @@
+@use '../../index'
+
+#projects
+    @apply flex flex-col mt-6 first:mt-0
+
+    h1
+        @apply text-3xl font-bold italic pb-0.5 border-b-2 border-retro-border border-solid mb-4 px-2.5
+
+    #gallery
+        @apply flex flex-row w-full items-center justify-center gap-4 flex-wrap
+
+        section
+            @apply flex flex-col justify-center items-center w-[32%] p-4
+            @apply bg-retro-backdrop/95 border-[3px] border-solid
+            @apply border-retro-border drop-shadow-[4.5px_5.5px_rgba(134,167,136,0.6)]
+
+            h3
+                @apply font-bold italic text-2xl px-2.5 mb-1.5
+                @apply border-b-2 border-solid border-retro-border
+
+            i
+                @apply text-sm font-medium
+
+            #about
+                list-style: inside square
+                @apply mt-2
+
+            #links
+                @apply flex flex-row gap-2 items-center mt-1
+
+                ul
+                    @apply list-none p-0
+
+                li
+                    @apply inline px-2 border-l-2 border-retro-border border-solid
+                    @apply first:border-none first:-ml-2 text-sm font-medium italic
+
+                    .primary
+                        @apply text-cyan-700
+
+                    .active
+                        @apply text-green-700
+
+                    .inactive
+                        @apply text-red-700
+
+                    .contributor
+                        @apply text-indigo-700

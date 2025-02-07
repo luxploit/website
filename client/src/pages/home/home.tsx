@@ -10,26 +10,28 @@ export const Home = () => {
 		<>
 			<Helmet>
 				<title>Home - lux's website</title>
-				<meta name="title" content="Home - lux's website" />
-				<meta name="description" content="Welcome to the home of just another goofy goober <3" />
+				<meta name={'title'} content={"Home - lux's website"} />
+				<meta name={'description'} content={'Welcome to the home of just another goofy goober <3'} />
 
-				<meta name="twitter:title" content="Home - lux's website" />
-				<meta name="twitter:description" content="Welcome to the home of just another goofy goober <3" />
+				<meta name={'twitter:title'} content={"Home - lux's website"} />
+				<meta name={'twitter:description'} content={'Welcome to the home of just another goofy goober <3'} />
 
-				<meta property="og:title" content="Home - lux's website" />
-				<meta property="og:description" content="Welcome to the home of just another goofy goober <3" />
+				<meta property={'og:title'} content={"Home - lux's website"} />
+				<meta property={'og:description'} content={'Welcome to the home of just another goofy goober <3'} />
 			</Helmet>
 
-			<div id="home">
-				<section id="text">
+			<div id={'home'}>
+				<section id={'text'}>
 					<span id={'welcome'}>Welcome to my personal home page :3</span>
 
 					<h2>Who am I?</h2>
 					<section>
-						<p>I'm Laura, a 19-year-old latina trans girl, who gets a bit silly</p>
-						<p>Been living in Germany most of my life, although I'm originally from Brazil</p>
 						<p>
-							I go by she/they pronouns, and have been on HRT since March 2024 <span id="hrt">({hrtMonthsPast} months now)</span>
+							I'm Laura, an <i>almost</i> 20-year-old latina trans girl, who gets a bit too silly
+						</p>
+						<p>Been living in Germany (in the "Ruhrpott") most of my life, although I'm Brazilian</p>
+						<p>
+							I go by she/they pronouns, and have been on HRT since March 4th 2024 <span id="hrt">({hrtMonthsPast} months now)</span>
 						</p>
 					</section>
 
@@ -39,7 +41,7 @@ export const Home = () => {
 							I'm a software engineer, working on quirky and interesting <a href={'/projects'}>projects</a>
 						</p>
 						<p>
-							Additionally I'm an <a href={'/nsfw'}>adult content creator</a>! Please <span id="mdni">minors, do not interact!</span>
+							Additionally I'm an <a href={'https://linktr.ee/cinnamon.sienna'}>adult content creator</a>! Please <span id={'mdni'}>minors, do not interact with it!</span>
 						</p>
 						<p>
 							Besides that I also make shitposts from time to time on <a href={'https://www.youtube.com/@datalynk'}>mine</a> and a{' '}
@@ -58,17 +60,17 @@ export const Home = () => {
 						<p>I guess this site here is also another place you can always find me at</p>
 					</section>
 
-					<div id="news">
+					<div id={'news'}>
 						<h4>Here are the latest news:</h4>
-						<marquee>there are currently no news available</marquee>
+						<marquee>i finally fucking finished the website, although news are not dynamic yet smd</marquee>
 					</div>
 				</section>
 
-				<div id="girl">
+				<div id={'girl'}>
 					<h2>hey look its me :3</h2>
 					<img src={'/images/me.jpg'} title={"if you say i'm cute you're lying >:3"}></img>
 					<h4>
-						more over on <a href="https://www.instagram.com/luxploit/">instagram</a>
+						more over on <a href={'https://www.instagram.com/luxploit/'}>instagram</a>
 					</h4>
 				</div>
 			</div>

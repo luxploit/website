@@ -8,8 +8,8 @@ import { Footer } from './components/footer/footer';
 
 import { Home } from './pages/home/home';
 import { _404 } from './pages/_404/_404';
-import { Files } from './pages/files/files';
-import { NSFW } from './pages/nsfw/nsfw';
+import { Projects } from './pages/projects/projects';
+// import { Files } from './pages/files/files';
 
 import 'tailwindcss/tailwind.css';
 import './index.sass';
@@ -23,10 +23,12 @@ export const App = () => {
 					<main>
 						<Router>
 							<Route path="/" component={Home} />
-							<Route path="/files" component={Files} />
-							<Route path="/projects" component={NSFW} />
-							<Route path="/socials" component={NSFW} />
-							<Route path="/nsfw" component={NSFW} />
+							{/* <Route path="/files" component={Files} /> */}
+							<Route path="/projects" component={Projects} />
+							<Route path="/writings" component={_404} />
+							<Route path="/socials" component={_404} />
+							<Route path="/activity" component={_404} />
+							<Route path="/friends" component={_404} />
 							<Route default component={_404} />
 						</Router>
 					</main>
