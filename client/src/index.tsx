@@ -9,6 +9,7 @@ import { Footer } from './components/footer/footer';
 import { Home } from './pages/home/home';
 import { _404 } from './pages/_404/_404';
 import { Projects } from './pages/projects/projects';
+import { Friends } from './pages/friends/friends';
 // import { Files } from './pages/files/files';
 
 import 'tailwindcss/tailwind.css';
@@ -28,7 +29,7 @@ export const App = () => {
 							<Route path="/writings" component={_404} />
 							<Route path="/socials" component={_404} />
 							<Route path="/activity" component={_404} />
-							<Route path="/friends" component={_404} />
+							<Route path="/friends" component={Friends} />
 							<Route default component={_404} />
 						</Router>
 					</main>
