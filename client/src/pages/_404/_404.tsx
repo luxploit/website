@@ -19,6 +19,9 @@ export const _404 = () => {
 			<section id={'_404'}>
 				<h1>404: Not Found</h1>
 				<p>The content you were looking for could not be found! Whoops...</p>
+				<i>
+					<p>or it's not finished yet and you clicked on a link im too lazy to finish</p>
+				</i>
 			</section>
 		</>
 	);

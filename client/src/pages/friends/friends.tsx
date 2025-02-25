@@ -21,7 +21,7 @@ export const Friends = () => {
 
 				{/* prettier-ignore */}
 				<section id="friendslist">
-					<a href={'https://analogfeelings.github.io/'} data-tooltip={'i love you so much nora <3'}>analogfeelings</a>
+					<a href={'https://ambraglow.org'} data-tooltip={'omg cat wifey :333333333'}>ambraglow</a>
 					<a href={'https://tim.ong/'} data-tooltip={'cmake propaganda spreader'}>eintim</a>
 					<a href={'https://youtube.com/@hs-tc'} data-tooltip={'skibidi rizzler <3'}>w1aw</a>
 					<a href={'https://zeromods.xyz/'} data-tooltip={'enemy rc-xd spotted'}>lifix</a>
@@ -43,6 +43,7 @@ export const Friends = () => {
 					<a href={'https://nsg650.github.io/'} data-tooltip={'bruhlaris'}>nsg650</a>
 					<a href={'https://pdawg-bytes.github.io/'} data-tooltip={'ppdawg uefi perc'}>pdawg</a>
 					<a href={'https://unixgirl.hs.vc'}>averageun1xgirl</a>
+					<a href={'https://analogfeelings.github.io/'} data-tooltip={'lynette feet reactor'}>analogfeelings</a>
 				</section>
 			</div>
 		</>

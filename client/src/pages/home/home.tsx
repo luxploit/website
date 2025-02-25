@@ -62,7 +62,9 @@ export const Home = () => {
 
 					<div id={'news'}>
 						<h4>Here are the latest news:</h4>
-						<marquee>i finally fucking finished the website, although news are not dynamic yet smd</marquee>
+						<marquee>
+							i'm <i>almost</i> finished with the fucking website, although news are not dynamic yet smd
+						</marquee>
 					</div>
 				</section>
 

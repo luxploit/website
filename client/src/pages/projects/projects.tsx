@@ -21,6 +21,7 @@ export const Projects = () => {
 				<h1>Coding Projects</h1>
 
 				<div id={'gallery'}>
+					{/* silverblue */}
 					<section>
 						<h3>silverblue</h3>
 						<i>A Windows NT inspired OS</i>
@@ -46,14 +47,13 @@ export const Projects = () => {
 						</div>
 					</section>
 
+					{/* SpiritOnline */}
 					<section>
 						<h3>SpiritOnline</h3>
 						<i>Reviving legacy services one at a time</i>
 						<ul id={'about'}>
-							{/* prettier-ignore */}
 							<li>
-								Written in <ProgHighlight type={ProgType.Lang_CSharp} text={"C#"} />, {' '}
-								powered by <ProgHighlight type={ProgType.Platform_DotNet} text={".NET 8"} />
+								Written purely in <ProgHighlight type={ProgType.Lang_Golang} text={'Golang'} />
 							</li>
 							<li>
 								Licensed under the <ProgHighlight type={ProgType.License_BSD} text={'BSD 4-Clause'} />
@@ -73,6 +73,7 @@ export const Projects = () => {
 						</summary>
 					</section>
 
+					{/* AzureFlare */}
 					<section>
 						<h3>AzureFlare</h3>
 						<i>A modern take on doing express</i>
@@ -101,15 +102,18 @@ export const Projects = () => {
 						</summary>
 					</section>
 
+					{/* Helios */}
 					<section>
 						<h3>Helios</h3>
 						<i>when uploading to discord gets too annoying</i>
+						{/* prettier-ignore */}
 						<ul id={'about'}>
 							<li>
-								Simple file uploader, written in <ProgHighlight type={ProgType.Lang_Golang} text={'Go'} />
+								Simple closed sourced file uploader
 							</li>
 							<li>
-								Closed source, runs on <ProgHighlight type={ProgType.OS_DebianLinux} text={'Debian'} />
+								Built with <ProgHighlight type={ProgType.Lang_Golang} text={'Golang'} /> { ' ' } 
+								and <ProgHighlight type={ProgType.Framework_Preact} text={'Preact X'} />
 							</li>
 						</ul>
 						<summary id={'links'}>
@@ -123,11 +127,11 @@ export const Projects = () => {
 						</summary>
 					</section>
 
+					{/* Remessenger */}
 					<section>
 						<h3>Remessenger</h3>
 						<i>MSN Messenger is so back</i>
 						<ul id={'about'}>
-							{/* prettier-ignore */}
 							<li>
 								Unfinished, written in <ProgHighlight type={ProgType.Lang_TypeScript} text={'TypeScript'} />
 							</li>
@@ -147,6 +151,34 @@ export const Projects = () => {
 								</li>
 								<li>
 									<a href={'https://remsgr.labs.luxploit.net'}>Web Archive</a>
+								</li>
+							</ul>
+						</summary>
+					</section>
+
+					{/* BugShot Roulette */}
+					<section>
+						<h3>BugShot Roulette</h3>
+						<i>BSR inspired Multiplayer Fan-Game</i>
+						<ul id={'about'}>
+							{/* prettier-ignore */}
+							<li>
+								Written in <ProgHighlight type={ProgType.Lang_CSharp} text={'C#'} />, {' '}
+								powered by <ProgHighlight type={ProgType.Platform_DotNet} text={'.NET 8'} />
+							</li>
+							<li>
+								Open source and <ProgHighlight type={ProgType.License_Apache2} text={'Apache 2'} /> Licensed
+							</li>
+						</ul>
+						<summary id={'links'}>
+							<ul>
+								<li>
+									<span>
+										Status: <span className={'contributor'}>Contributor</span>
+									</span>
+								</li>
+								<li>
+									<a href={'https://github.com/chrizziderkek/bugshotroulette'}>GitHub</a>
 								</li>
 							</ul>
 						</summary>
