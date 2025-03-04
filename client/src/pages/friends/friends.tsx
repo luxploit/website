@@ -30,7 +30,6 @@ export const Friends = () => {
 					<a href={'https://knijn.one/'}>emmaknijn</a>
 					<a href={'https://bnyyx.com/'} data-tooltip={'banger alert'}>tonnus</a>
 					<a href={'https://hiden.cc/'}>hiden</a>
-					<a href={'https://bassusteur.github.io/'}>si5351</a>
 					<a href={'https://marvinf.com/'}>ma_rv</a>
 					<a href={'https://itsvic.dev/'}>vic</a>
 					<a href={'https://riddim-glitch.is-a.dev/'}>riddim_glitch</a>
