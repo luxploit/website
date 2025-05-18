@@ -26,9 +26,9 @@ export const App = () => {
 							<Route path="/" component={Home} />
 							{/* <Route path="/files" component={Files} /> */}
 							<Route path="/projects" component={Projects} />
-							<Route path="/writings" component={_404} />
+							{/* <Route path="/writings" component={_404} />
 							<Route path="/socials" component={_404} />
-							<Route path="/activity" component={_404} />
+							<Route path="/activity" component={_404} /> */}
 							<Route path="/friends" component={Friends} />
 							<Route default component={_404} />
 						</Router>

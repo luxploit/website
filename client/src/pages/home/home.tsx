@@ -63,7 +63,7 @@ export const Home = () => {
 					<div id={'news'}>
 						<h4>Here are the latest news:</h4>
 						<marquee>
-							i'm <i>almost</i> finished with the fucking website, although news are not dynamic yet smd
+							<i>todo: recode this entire garbage from tailwind+preact to something easy.. fuck me</i>
 						</marquee>
 					</div>
 				</section>

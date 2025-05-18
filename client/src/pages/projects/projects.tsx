@@ -102,14 +102,15 @@ export const Projects = () => {
 						</summary>
 					</section>
 
-					{/* Helios */}
+					{/* ctx.quest */}
 					<section>
-						<h3>Helios</h3>
-						<i>when uploading to discord gets too annoying</i>
+						<h3>ctx</h3>
+						<i>wheatly esp go brrr</i>
 						{/* prettier-ignore */}
 						<ul id={'about'}>
 							<li>
-								Simple closed sourced file uploader
+								Versatile cheat base built with { ' ' }
+								<ProgHighlight type={ProgType.Lang_CPlusPlus} text={'C++'} /> 
 							</li>
 							<li>
 								Built with <ProgHighlight type={ProgType.Lang_Golang} text={'Golang'} /> { ' ' } 
@@ -120,7 +121,7 @@ export const Projects = () => {
 							<ul>
 								<li>
 									<span>
-										Status: <span className={'contributor'}>Contributor</span>
+										Status: <span className={'inactive'}>Inactive</span>
 									</span>
 								</li>
 							</ul>

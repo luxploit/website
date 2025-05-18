@@ -7,7 +7,13 @@ footer
         @apply flex flex-col justify-center mr-auto flex-shrink-0
 
     #fl-header
-        @apply flex flex-col justify-center h-[76px] items-center -mt-1
+        row-gap: 0 !important
+        @apply flex flex-row justify-end h-[76px] items-end -mt-1 flex-wrap max-w-[480px] gap-2
 
-        h3
-            @apply text-xl font-bold italic
+        img
+            width: 88px
+            height: 31px
+            cursor: inherit
+
+        a
+            @apply cursor-pointer

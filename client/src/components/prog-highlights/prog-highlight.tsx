@@ -1,5 +1,6 @@
 export enum ProgType {
 	Lang_C,
+	Lang_CPlusPlus,
 	Lang_CSharp,
 	Lang_TypeScript,
 	Lang_Golang,
@@ -19,6 +20,7 @@ export interface ProgHighlightOptions {
 export const ProgHighlight = (options: ProgHighlightOptions) => {
 	let progMap = [
 		'#649ad2', // Lang_C
+		'#5e39a6', // Lang_CPlusPlus
 		'#196d1d', // Lang_CSharp
 		'#377cc8', // Lang_TypeScript
 		'#00a7d4', // Lang_Golang
