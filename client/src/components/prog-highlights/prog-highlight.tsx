@@ -9,6 +9,7 @@ export enum ProgType {
 	License_BSD,
 	License_MIT,
 	License_Apache2,
+	Misc_SourceEngine,
 	// OS_DebianLinux,
 }
 
@@ -29,6 +30,7 @@ export const ProgHighlight = (options: ProgHighlightOptions) => {
 		'#a11616', // License_BSD
 		'#1966ff', // License_MIT
 		'#e77825', // License_Apache2
+		'#f79b07', // Misc_SourceEngine
 		// '#a80030', // OS_DebianLinux
 	];
 

@@ -41,7 +41,7 @@ export const Home = () => {
 							I'm a software engineer, working on quirky and interesting <a href={'/projects'}>projects</a>
 						</p>
 						<p>
-							Additionally I'm an <a href={'https://linktr.ee/cinnamon.sienna'}>adult content creator</a>! Please <span id={'mdni'}>minors, do not interact with it!</span>
+							Additionally I'm an <a href={'https://linktr.ee/realacidpaws'}>adult content creator</a>! Please <span id={'mdni'}>minors, do not interact with it!</span>
 						</p>
 						<p>
 							Besides that I also make shitposts from time to time on <a href={'https://www.youtube.com/@datalynk'}>mine</a> and a{' '}
@@ -51,9 +51,7 @@ export const Home = () => {
 
 					<h2>Where can you find me?</h2>
 					<section>
-						<p>
-							You can find all of my socials linked over <a href={'/socials'}>here</a>, I'm everywhere :3
-						</p>
+						<p>You can find all of my socials linked here soon but I'm everywhere :3</p>
 						<p>
 							<a href={'mailto:admin@luxploit.net'}>E-Mail</a> me for general or postmaster inqueries &mdash; it might take a while
 						</p>

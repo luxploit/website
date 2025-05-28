@@ -113,15 +113,14 @@ export const Projects = () => {
 								<ProgHighlight type={ProgType.Lang_CPlusPlus} text={'C++'} /> 
 							</li>
 							<li>
-								Built with <ProgHighlight type={ProgType.Lang_Golang} text={'Golang'} /> { ' ' } 
-								and <ProgHighlight type={ProgType.Framework_Preact} text={'Preact X'} />
+								Targets mainly <ProgHighlight type={ProgType.Misc_SourceEngine} text={"Source Engine"} /> games
 							</li>
 						</ul>
 						<summary id={'links'}>
 							<ul>
 								<li>
 									<span>
-										Status: <span className={'inactive'}>Inactive</span>
+										Status: <span className={'active'}>Active</span>
 									</span>
 								</li>
 							</ul>
