@@ -1,6 +1,4 @@
-import { useEffect } from 'preact/hooks';
 import './footer.sass';
-import { axiosInst } from '../..';
 
 export const Footer = () => {
 	return (

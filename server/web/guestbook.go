@@ -1,25 +1,31 @@
 package web
 
-// func guestbookRouter(router *gin.RouterGroup) {
-// 	router.GET("/", getBookPosts)
-// 	router.POST("/", addNewBookPost)
-// 	router.DELETE("/", deleteNewBookPost)
-// }
+import (
+	"net/http"
 
-// func getBookPosts(c *gin.Context) {
-// 	c.JSON(http.StatusOK, gin.H{
-// 		"posts": []gin.H{
-// 			{
-// 				"": "",
-// 			},
-// 		},
-// 	})
-// }
+	"github.com/gin-gonic/gin"
+)
 
-// func addNewBookPost(c *gin.Context) {
+func guestbookRouter(router *gin.RouterGroup) {
+	router.GET("/", getBookPosts)
+	router.POST("/", addNewBookPost)
+	router.DELETE("/", deleteNewBookPost)
+}
 
-// }
+func getBookPosts(c *gin.Context) {
+	c.JSON(http.StatusOK, gin.H{
+		"posts": []gin.H{
+			{
+				"": "",
+			},
+		},
+	})
+}
 
-// func deleteNewBookPost(c *gin.Context) {
+func addNewBookPost(c *gin.Context) {
 
-// }
+}
+
+func deleteNewBookPost(c *gin.Context) {
+
+}
