@@ -6,27 +6,14 @@ footer
     #copyright
         @apply flex flex-col justify-center mr-auto flex-shrink-0
 
-    #fl-right
-        @apply flex flex-col justify-center flex-shrink-0 max-w-[480px] gap-2
+    #fl-header
+        row-gap: 0 !important
+        @apply flex flex-row justify-end h-[76px] items-end -mt-1 flex-wrap max-w-[480px] gap-2
 
-        div:last-child
-            @apply flex flex-row justify-center items-center
+        img
+            width: 88px
+            height: 31px
+            cursor: inherit
 
-            a
-                img
-                    height: 31px
-
-            div:last-child
-                display: none
-
-        #fl-icons
-            row-gap: 0 !important
-            @apply flex flex-row justify-end h-[31px] items-end -mt-1 flex-wrap max-w-[480px] gap-2
-
-            img
-                width: 88px
-                height: 31px
-                cursor: inherit
-
-            a
-                @apply cursor-pointer
+        a
+            @apply cursor-pointer
