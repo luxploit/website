@@ -1,6 +1,23 @@
+import { useEffect } from 'preact/hooks';
 import './footer.sass';
+import { axiosInst } from '../..';
 
 export const Footer = () => {
+	useEffect(() => {
+		const fetchWidget = async () => {
+			try {
+				const response = await axiosInst.get('/js/webring');
+				const script = document.createElement('script');
+				script.textContent = response.data;
+				document.getElementById('fl-right').appendChild(script);
+			} catch (err) {
+				console.error('failed to fetch webring js');
+			}
+		};
+
+		fetchWidget(); // call
+	}, []);
+
 	return (
 		<footer>
 			<section id={'copyright'}>
@@ -11,7 +28,7 @@ export const Footer = () => {
 				<span>Made with ❤️ and 🏳️‍⚧️ rights</span>
 			</section>
 
-			<div id="fl-right">
+			<div id={'fl-right'}>
 				<div id={'fl-icons'}>
 					<a href="https://hrt.luxploit.net">
 						<img src="https://yesterhost.neocities.org/archive/buttons/button174.png" />
@@ -25,8 +42,6 @@ export const Footer = () => {
 						<img src="http://www.mabsland.com/Pandas/Censor_Mc.gif" width={88} height={31} />
 					</a>
 				</div>
-
-				<script src="https://transring.neocities.org/ring.js"></script>
 			</div>
 		</footer>
 	);
