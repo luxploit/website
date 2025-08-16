@@ -21,32 +21,6 @@ export const Projects = () => {
 				<h1>Coding Projects</h1>
 
 				<div id={'gallery'}>
-					{/* silverblue */}
-					<section>
-						<h3>silverblue</h3>
-						<i>A Windows NT inspired OS</i>
-						<ul id={'about'}>
-							<li>
-								Written in 100% <ProgHighlight type={ProgType.Lang_C} text={'C99'} /> for x86_64
-							</li>
-							<li>
-								Licensed under the <ProgHighlight type={ProgType.License_BSD} text={'BSD 3-Clause'} />
-							</li>
-						</ul>
-						<div id={'links'}>
-							<ul>
-								<li>
-									<span>
-										Status: <span className={'primary'}>Active (Main)</span>
-									</span>
-								</li>
-								<li>
-									<a href={'https://github.com/luxploit/silverblue'}>GitHub Repo</a>
-								</li>
-							</ul>
-						</div>
-					</section>
-
 					{/* SpiritOnline */}
 					<section>
 						<h3>SpiritOnline</h3>
@@ -67,44 +41,67 @@ export const Projects = () => {
 									</span>
 								</li>
 								<li>
-									<a href={'https://spiritonline.net'}>Website</a>
+									<a href={'https://github.com/buffersnow/spiritonline.net'}>Source Code</a>
 								</li>
 							</ul>
 						</summary>
 					</section>
 
-					{/* AzureFlare */}
+					{/* OpenXeChain */}
 					<section>
-						<h3>AzureFlare</h3>
-						<i>A modern take on doing express</i>
+						<h3>OpenXeChain</h3>
+						<i>bringing the xdk into the modern era</i>
 						<ul id={'about'}>
 							<li>
-								Built with opinions using <ProgHighlight type={ProgType.Lang_TypeScript} text={'TypeScript'} />
+								An OSS toolchain for <ProgHighlight type={ProgType.Platform_Xbox} text={'Xbox 360'} />
 							</li>
 							<li>
-								Licensed under the <ProgHighlight type={ProgType.License_BSD} text={'BSD 4-Clause'} />
+								Licensed under the <ProgHighlight type={ProgType.License_MPL2} text={'MPL-2.0'} />
 							</li>
 						</ul>
 						<summary id={'links'}>
 							<ul>
 								<li>
 									<span>
-										Status: <span className={'active'}>Active</span>
+										Status: <span className={'contributor'}>Contributor</span>
 									</span>
 								</li>
 								<li>
-									<a href={'https://github.com/luxploit/silverblue'}>GitHub Repo</a>
-								</li>
-								<li>
-									<a href={'https://npm.im/@lxpt/azureflare'}>NPM</a>
+									<a href={'https://github.com/OpenXeChain'}>GitHub Repo</a>
 								</li>
 							</ul>
 						</summary>
 					</section>
 
+					{/* silverblue */}
+					<section>
+						<h3>silverblue</h3>
+						<i>A Windows NT inspired OS</i>
+						<ul id={'about'}>
+							<li>
+								Written in 100% <ProgHighlight type={ProgType.Lang_C} text={'C99'} /> for x86_64
+							</li>
+							<li>
+								Licensed under the <ProgHighlight type={ProgType.License_BSD} text={'BSD 3-Clause'} />
+							</li>
+						</ul>
+						<div id={'links'}>
+							<ul>
+								<li>
+									<span>
+										Status: <span className={'inactive'}>Inactive</span>
+									</span>
+								</li>
+								<li>
+									<a href={'https://github.com/luxploit/silverblue'}>GitHub Repo</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+
 					{/* ctx.quest */}
 					<section>
-						<h3>ctx</h3>
+						<h3>ctx.quest</h3>
 						<i>wheatly esp go brrr</i>
 						{/* prettier-ignore */}
 						<ul id={'about'}>
@@ -120,7 +117,7 @@ export const Projects = () => {
 							<ul>
 								<li>
 									<span>
-										Status: <span className={'active'}>Active</span>
+										Status: <span className={'inactive'}>Inactive</span>
 									</span>
 								</li>
 							</ul>
@@ -143,7 +140,7 @@ export const Projects = () => {
 							<ul>
 								<li>
 									<span>
-										Status: <span className={'inactive'}>Inactive</span>
+										Status: <span className={'shutdown'}>Shutdown</span>
 									</span>
 								</li>
 								<li>

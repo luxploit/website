@@ -5,12 +5,14 @@ export enum ProgType {
 	Lang_TypeScript,
 	Lang_Golang,
 	Platform_DotNet,
+	Platform_Xbox,
 	Framework_Preact,
 	License_BSD,
 	License_MIT,
 	License_Apache2,
+	License_MPL2,
 	Misc_SourceEngine,
-	// OS_DebianLinux,
+	OS_DebianLinux,
 }
 
 export interface ProgHighlightOptions {
@@ -26,12 +28,14 @@ export const ProgHighlight = (options: ProgHighlightOptions) => {
 		'#377cc8', // Lang_TypeScript
 		'#00a7d4', // Lang_Golang
 		'#360092', // Platform_DotNet
+		'#7EB900', // Platform_Xbox
 		'#673ab8', // Framework_Preact
 		'#a11616', // License_BSD
 		'#1966ff', // License_MIT
 		'#e77825', // License_Apache2
+		'#ff1a00', // License_MPL2
 		'#f79b07', // Misc_SourceEngine
-		// '#a80030', // OS_DebianLinux
+		'#a80030', // OS_DebianLinux
 	];
 
 	return <span style={`color: ${progMap[options.type]}`}>{options.text}</span>;
